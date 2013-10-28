@@ -1,0 +1,44 @@
+tagfs
+=====
+
+Tag based file manager written in python (Currently a CLI)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tagfs--Tag based file manager CLI
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Coded in python--2.7
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+How to use:
+-----------
+Step 1: 
+			python prepare_commands.py
+Step 2:
+			python generate_tag_vs_files.py
+Step 3:
+			python main.py
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++			
+			
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Commands:
+			tagfs> help
+			
+			tagfs> look [tag or space separated tags]
+								Searches for files which match the given tag 
+								or space separated tags
+			tagfs> add [tag] [file or folder]
+								Indexes files/folders with the given tag
+			tagfs> quit
+			or
+			tagfs> q
+								Exits the program loop
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Near Future Plans:
+		1. Add an un-tag module
+		2. Add an Union and Intersection based set search
+		3. Add MAKE based installer for the modules
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
