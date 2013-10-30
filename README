@@ -22,23 +22,34 @@ Step 3:
 			
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Commands:
-			tagfs> help
-			
-			tagfs> look [tag or space separated tags]
-								Searches for files which match the given tag 
-								or space separated tags
-			tagfs> add [tag] [file or folder]
-								Indexes files/folders with the given tag
-			tagfs> quit
-			or
-			tagfs> q
-								Exits the program loop
+1. tagfs# help
+2. tagfs# U [tag or space separated tags]
+    UNION
+    Searches for files which match the given tag                                    or space separated tags
+3. tagfs> add [tag] [file or folder]
+   Indexes files/folders with the given tag
+4. tagfs# quit
+   or
+   tagfs# q
+   Exits the program loop
+5. tagfs# I [tags sepatated by spaces]
+   INTERSECTION
+   returns a list of files which have all specified tags
+6. tagfs# stats
+   Shows-
+    total no. of tags
+    total no. of files
+7. tagfs# ! [any command]
+   or
+   tagfs# sys [any command]
+   Executes a given command to system shell
+
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Near Future Plans:
-		1. Add an un-tag module
-		2. Add an Union and Intersection based set search
-		3. Add MAKE based installer for the modules
+		1. Add intelligent tags for files
+		2. Use less space for storing tag_vs_files.pkl
+		3. Add more features
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
