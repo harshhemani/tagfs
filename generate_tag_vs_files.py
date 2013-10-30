@@ -1,5 +1,6 @@
 import cPickle;
 import os;
+import os.path;
 
 target_directory = "sample/"
 
@@ -11,6 +12,8 @@ for dirname, dirnames, filenames in os.walk(target_directory):
         fname,extension = os.path.splitext(filename)
 	extension = extension[1:]
         filepath = os.path.join(dirname, filename)
+        filepath = os.path.abspath(filepath)
+        print filepath
 	if(extension not in dictionary):
 		dictionary[extension]=[]
 	dictionary[extension].append(filepath)
